@@ -63,7 +63,7 @@ class _TapCardState extends State<TapCard> {
         onTap: _increment,
         onLongPress: _confirmReset,
         child: ListTile(
-          title: const Text('Tap this card'),
+          title: const Text('Tap me'),
           trailing: Text('$_taps'),
         ),
       ),

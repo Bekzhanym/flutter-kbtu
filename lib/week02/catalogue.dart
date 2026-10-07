@@ -50,7 +50,7 @@ class Library {
   Set<Genre> get genres => books.map((book) => book.genre).toSet();
 
   List<String> get displayLines => [
-        'CATALOGUE',
+        'Catalogue',
         for (final book in books) '${book.title} (${book.year})',
         ...authorNames,
         if (books.any((book) => book.pages == 0)) '(incomplete data)',

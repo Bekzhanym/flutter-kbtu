@@ -13,13 +13,13 @@ class ProfileHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final colorScheme = Theme.of(context).colorScheme;
-
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
         const CircleAvatar(
-          radius: 80,
+          radius: 40,
           backgroundImage: AssetImage('assets/images/profile.png'),
+          
         ),
         Padding(
           padding: const EdgeInsets.only(top: 16),
