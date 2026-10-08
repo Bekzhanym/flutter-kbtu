@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import 'package:week5/core/models/student.dart';
-import 'package:week5/features/edit_student/widgets/discard_changes_dialog.dart';
-import 'package:week5/features/edit_student/widgets/edit_student_form.dart';
+import 'students.dart';
+import 'widgets/discard_changes_dialog.dart';
+import 'widgets/edit_student_form.dart';
 
 class EditScreen extends StatefulWidget {
   const EditScreen({super.key, required this.student});

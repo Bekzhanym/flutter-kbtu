@@ -1,24 +1,18 @@
 import 'package:flutter/material.dart';
 
-import 'package:week5/core/models/student.dart';
-import 'package:week5/core/routing/routes.dart';
-import 'package:week5/features/students/logic/use_cases/get_students_use_case.dart';
-import 'package:week5/features/students/widgets/student_list_tile.dart';
+import 'routes.dart';
+import 'students.dart';
+import 'widgets/student_list_tile.dart';
 
 class StudentsScreen extends StatefulWidget {
-  const StudentsScreen({
-    super.key,
-    this.getStudents = const GetStudentsUseCase(),
-  });
-
-  final GetStudentsUseCase getStudents;
+  const StudentsScreen({super.key});
 
   @override
   State<StudentsScreen> createState() => _StudentsScreenState();
 }
 
 class _StudentsScreenState extends State<StudentsScreen> {
-  late final List<Student> _students = List.of(widget.getStudents());
+  late final List<Student> _students = List.of(students);
 
   Future<void> _open(int index) async {
     final updated = await Navigator.of(

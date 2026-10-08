@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:week5/features/edit_student/widgets/student_text_field.dart';
+import 'student_text_field.dart';
 
 class EditStudentForm extends StatelessWidget {
   const EditStudentForm({

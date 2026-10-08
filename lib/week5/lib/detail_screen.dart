@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-import 'package:week5/core/models/student.dart';
-import 'package:week5/core/routing/routes.dart';
-import 'package:week5/features/student_detail/widgets/student_avatar.dart';
-import 'package:week5/features/student_detail/widgets/student_info_tile.dart';
+import 'routes.dart';
+import 'students.dart';
+import 'widgets/student_avatar.dart';
+import 'widgets/student_info_tile.dart';
 
 class DetailScreen extends StatefulWidget {
   const DetailScreen({super.key, required this.student});
