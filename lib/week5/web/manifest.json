@@ -1,6 +1,6 @@
 {
-    "name": "week5",
-    "short_name": "week5",
+    "name": "never_overflows",
+    "short_name": "never_overflows",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

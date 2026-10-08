@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'detail_screen.dart';
-import 'edit_screen.dart';
-import 'routes.dart';
-import 'students.dart';
-import 'students_screen.dart';
+import 'contact_list.dart';
 
 void main() => runApp(const MyApp());
 
@@ -13,27 +9,19 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => MaterialApp(
-    theme: ThemeData(
-      scaffoldBackgroundColor: Colors.white,
-      colorScheme: ColorScheme.fromSeed(seedColor: Colors.indigo),
-      appBarTheme: const AppBarTheme(
-        backgroundColor: Colors.white,
-        surfaceTintColor: Colors.white,
-      ),
-      dialogTheme: const DialogThemeData(backgroundColor: Colors.white),
-    ),
-    initialRoute: Routes.students,
-    routes: {Routes.students: (_) => const StudentsScreen()},
-    onGenerateRoute: (settings) => switch (settings.name) {
-      Routes.student => MaterialPageRoute<Student>(
-        settings: settings,
-        builder: (_) => DetailScreen(student: settings.arguments as Student),
-      ),
-      Routes.edit => MaterialPageRoute<Student>(
-        settings: settings,
-        builder: (_) => EditScreen(student: settings.arguments as Student),
-      ),
-      _ => null,
-    },
-  );
+        theme: ThemeData(
+          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        ),
+        home: const HomeScreen(),
+      );
+}
+
+class HomeScreen extends StatelessWidget {
+  const HomeScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) => Scaffold(
+        appBar: AppBar(title: const Text('Contacts')),
+        body: const ContactList(),
+      );
 }
