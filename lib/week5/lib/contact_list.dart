@@ -19,7 +19,7 @@ class ContactList extends StatelessWidget {
       ),
       Expanded(
         child: ListView.separated(
-          padding: const EdgeInsets.all(16),
+          padding: const EdgeInsets.all(0),
           itemCount: contacts.length,
           itemBuilder: (context, i) => ContactCard(contact: contacts[i]),
           separatorBuilder: (context, i) => const Divider(),

@@ -9,11 +9,18 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => MaterialApp(
-        theme: ThemeData(
-          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        ),
-        home: const HomeScreen(),
-      );
+    theme: ThemeData(
+      colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+    ),
+    darkTheme: ThemeData(
+      colorScheme: ColorScheme.fromSeed(
+        seedColor: Colors.deepPurple,
+        brightness: Brightness.dark,
+      ),
+    ),
+    themeMode: ThemeMode.system,
+    home: const HomeScreen(),
+  );
 }
 
 class HomeScreen extends StatelessWidget {
@@ -21,7 +28,7 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => Scaffold(
-        appBar: AppBar(title: const Text('Contacts')),
-        body: const ContactList(),
-      );
+    appBar: AppBar(title: const Text('Contacts')),
+    body: const ContactList(),
+  );
 }
