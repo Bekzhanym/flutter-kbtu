@@ -1,0 +1,1 @@
+enum BookAction { toggleRead, delete }

@@ -1,0 +1,1 @@
+enum MeetupMenuAction { edit, delete }
