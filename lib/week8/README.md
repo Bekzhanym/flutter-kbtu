@@ -12,7 +12,9 @@ lib/
 │   ├── filter.dart        — enum Filter { all, unread, read }
 │   └── book_action.dart   — enum BookAction { toggleRead, delete }
 ├── widgets/
-│   └── book_tile.dart     — BookTile: карточка книги в списке
+│   ├── book_tile.dart     — BookTile: карточка книги в списке
+│   ├── library_header.dart — LibraryHeader: шапка Books / Pages / Unread
+│   └── stat_column.dart   — StatColumn: число + подпись
 ├── library_screen.dart    — LibraryScreen: список, фильтр, шапка со статистикой, FAB
 ├── detail_screen.dart     — DetailScreen + enum BookAction
 └── add_book_screen.dart   — AddBookScreen: форма с валидацией

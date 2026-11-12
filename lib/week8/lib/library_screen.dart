@@ -6,6 +6,7 @@ import 'models/book.dart';
 import 'models/book_action.dart';
 import 'models/filter.dart';
 import 'widgets/book_tile.dart';
+import 'widgets/library_header.dart';
 
 class LibraryScreen extends StatefulWidget {
   const LibraryScreen({super.key});
@@ -62,7 +63,7 @@ class _LibraryScreenState extends State<LibraryScreen> {
         children: [
           Padding(
             padding: const EdgeInsets.fromLTRB(8, 8, 8, 0),
-            child: _Header(books: _books),
+            child: LibraryHeader(books: _books),
           ),
           Padding(
             padding: const EdgeInsets.all(8),
@@ -97,46 +98,6 @@ class _LibraryScreenState extends State<LibraryScreen> {
               },
             ),
           ),
-        ],
-      ),
-    );
-  }
-}
-
-class _Header extends StatelessWidget {
-  const _Header({required this.books});
-
-  final List<Book> books;
-
-  @override
-  Widget build(BuildContext context) => Card(
-    child: Padding(
-      padding: const EdgeInsets.symmetric(vertical: 12),
-      child: Row(
-        children: [
-          _Stat(value: books.length, label: 'Books'),
-          _Stat(value: totalPages(books), label: 'Pages'),
-          _Stat(value: unread(books).length, label: 'Unread'),
-        ],
-      ),
-    ),
-  );
-}
-
-class _Stat extends StatelessWidget {
-  const _Stat({required this.value, required this.label});
-
-  final int value;
-  final String label;
-
-  @override
-  Widget build(BuildContext context) {
-    final text = Theme.of(context).textTheme;
-    return Expanded(
-      child: Column(
-        children: [
-          Text('$value', style: text.headlineSmall),
-          Text(label, style: text.bodySmall),
         ],
       ),
     );

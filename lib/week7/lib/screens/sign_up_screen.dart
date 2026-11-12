@@ -52,7 +52,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
   Future<void> _pickBirth() async {
     final picked = await showDatePicker(
       context: context,
-      initialDate: _birth ?? DateTime(2005),
+      initialDate: _birth ?? DateTime(2007),
       firstDate: DateTime(1950),
       lastDate: DateTime.now(),
     );

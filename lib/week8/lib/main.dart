@@ -17,7 +17,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) => MaterialApp(
     theme: ThemeData(
-      colorScheme: ColorScheme.fromSeed(seedColor: Colors.indigo),
+      colorScheme: ColorScheme.fromSeed(
+        seedColor: const Color(0xFF4169E1),
+        dynamicSchemeVariant: DynamicSchemeVariant.fidelity,
+      ),
     ),
     home: const LibraryScreen(),
   );

@@ -1,5 +1,3 @@
-// Validators return null for "fine" and a message for "not fine".
-
 String? validateName(String? v) =>
     (v ?? '').trim().length < 2 ? 'Name is too short' : null;
 

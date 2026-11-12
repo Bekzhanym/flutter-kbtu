@@ -61,7 +61,6 @@ class _AddBookScreenState extends State<AddBookScreen> {
     }
   }
 
-
   @override
   Widget build(BuildContext context) => Scaffold(
     appBar: AppBar(title: const Text('Add book')),

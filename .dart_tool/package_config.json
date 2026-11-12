@@ -9,8 +9,8 @@
     }
   ],
   "generator": "pub",
-  "generatorVersion": "3.12.2",
-  "flutterRoot": "file:///Users/bekzhanbeibituly/develop/flutter",
-  "flutterVersion": "3.44.6",
+  "generatorVersion": "3.10.8",
+  "flutterRoot": "file:///Users/bekzhanbeibituly/fvm/versions/3.38.9",
+  "flutterVersion": "3.38.9",
   "pubCache": "file:///Users/bekzhanbeibituly/.pub-cache"
 }
