@@ -1,0 +1,15 @@
+include: package:flutter_lints/flutter.yaml
+
+linter:
+  rules:
+    unawaited_futures: true
+    avoid_print: true
+
+formatter:
+  trailing_commas: preserve
+
+analyzer:
+  exclude:
+    - build/**
+    - android/**
+    - ios/**
